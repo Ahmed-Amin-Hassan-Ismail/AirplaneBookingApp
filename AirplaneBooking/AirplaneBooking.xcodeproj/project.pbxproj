@@ -19,6 +19,7 @@
 		AC918D712A92620F00789F60 /* PaymentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D702A92620F00789F60 /* PaymentCardView.swift */; };
 		AC918D742A92629200789F60 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D732A92629200789F60 /* Card.swift */; };
 		AC918D762A92636200789F60 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D752A92636200789F60 /* CardView.swift */; };
+		AC918D792A92753800789F60 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D782A92753800789F60 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		AC918D702A92620F00789F60 /* PaymentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardView.swift; sourceTree = "<group>"; };
 		AC918D732A92629200789F60 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		AC918D752A92636200789F60 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AC918D782A92753800789F60 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		AC918D5D2A9255FD00789F60 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AC918D772A92753000789F60 /* Detail */,
 				AC918D662A9258B700789F60 /* Home */,
 				AC918D652A9258AB00789F60 /* Main */,
 			);
@@ -153,6 +156,14 @@
 				AC918D732A92629200789F60 /* Card.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AC918D772A92753000789F60 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				AC918D782A92753800789F60 /* DetailView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +241,7 @@
 				AC918D6B2A92599200789F60 /* FlightHeaderView.swift in Sources */,
 				AC918D502A92517200789F60 /* AirplaneBookingApp.swift in Sources */,
 				AC918D762A92636200789F60 /* CardView.swift in Sources */,
+				AC918D792A92753800789F60 /* DetailView.swift in Sources */,
 				AC918D712A92620F00789F60 /* PaymentCardView.swift in Sources */,
 				AC918D622A92562900789F60 /* Color + EXT.swift in Sources */,
 				AC918D682A92593A00789F60 /* HomeView.swift in Sources */,

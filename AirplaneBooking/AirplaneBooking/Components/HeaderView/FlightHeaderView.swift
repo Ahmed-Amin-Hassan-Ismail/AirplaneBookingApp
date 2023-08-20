@@ -41,10 +41,9 @@ struct FlightHeaderView: View {
         }
         .padding(15)
         .padding([.top], safeArea.top)
-        .background(
-            Rectangle()
-                .fill(linearGradients)
-        )
+        .background(Rectangle().fill(linearGradients))
+        .overlay(addPlusButton, alignment: .bottomTrailing)
+        
     }
 }
 
@@ -93,6 +92,28 @@ extension FlightHeaderView {
             .aspectRatio(contentMode: .fit)
             .frame(height: 160)
             .padding(.bottom, -20)
+    }
+    
+    private var addPlusButton: some View {
+        
+        Button(action: {
+            
+        }, label: {
+            Image(systemName: "plus")
+                .font(.title3)
+                .fontWeight(.semibold)
+                .foregroundColor(.gray)
+                .frame(width: 40, height: 40)
+                
+                .background(
+                Circle()
+                    .fill(.white)
+                    .shadow(color: .black.opacity(0.35),
+                            radius: 5, x: 5, y: 5)
+                )
+                .offset(x: -15, y: 17)
+        })
+        
     }
 }
 

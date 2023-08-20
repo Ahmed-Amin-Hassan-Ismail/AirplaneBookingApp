@@ -40,7 +40,7 @@ struct FlightHeaderView: View {
             airplaneImageView
         }
         .padding(15)
-        .padding([.top, .horizontal], safeArea.top)
+        .padding([.top], safeArea.top)
         .background(
             Rectangle()
                 .fill(linearGradients)

@@ -29,6 +29,10 @@ struct HomeView: View {
         VStack(spacing: 0) {
             
             FlightHeaderView(size: size, safeArea: safeArea)
+                .zIndex(1)
+            
+            PaymentCardView()
+                .zIndex(0)
             
         }
     }

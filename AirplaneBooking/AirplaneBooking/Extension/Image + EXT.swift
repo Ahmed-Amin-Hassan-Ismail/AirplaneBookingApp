@@ -39,29 +39,29 @@ extension Image {
 
 struct CardType {
     
-    static let americanExpress = Image("AmericanExpress")
-    static let masterCard = Image("MasterCard")
-    static let visa = Image("Visa")
+    let americanExpress = Image("AmericanExpress")
+    let masterCard = Image("MasterCard")
+    let visa = Image("Visa")
 }
 
 struct Cards {
     
-    static let card1 = Image("Card1")
-    static let card2 = Image("Card2")
-    static let card3 = Image("Card3")
-    static let card4 = Image("Card4")
-    static let card5 = Image("Card5")
-    static let card6 = Image("Card6")
-    static let card7 = Image("Card7")
-    static let card8 = Image("Card8")
-    static let card9 = Image("Card9")
-    static let card10 = Image("Card10")
+    let card1 = Image("Card1")
+    let card2 = Image("Card2")
+    let card3 = Image("Card3")
+    let card4 = Image("Card4")
+    let card5 = Image("Card5")
+    let card6 = Image("Card6")
+    let card7 = Image("Card7")
+    let card8 = Image("Card8")
+    let card9 = Image("Card9")
+    let card10 = Image("Card10")
     
 }
 
 struct Users {
     
-    static let user1 = Image("User1")
-    static let user2 = Image("User2")
+    let user1 = Image("User1")
+    let user2 = Image("User2")
 }
 

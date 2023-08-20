@@ -16,6 +16,9 @@
 		AC918D682A92593A00789F60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D672A92593A00789F60 /* HomeView.swift */; };
 		AC918D6B2A92599200789F60 /* FlightHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D6A2A92599200789F60 /* FlightHeaderView.swift */; };
 		AC918D6D2A925CD000789F60 /* FlightDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D6C2A925CD000789F60 /* FlightDetailsView.swift */; };
+		AC918D712A92620F00789F60 /* PaymentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D702A92620F00789F60 /* PaymentCardView.swift */; };
+		AC918D742A92629200789F60 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D732A92629200789F60 /* Card.swift */; };
+		AC918D762A92636200789F60 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D752A92636200789F60 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		AC918D672A92593A00789F60 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AC918D6A2A92599200789F60 /* FlightHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightHeaderView.swift; sourceTree = "<group>"; };
 		AC918D6C2A925CD000789F60 /* FlightDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsView.swift; sourceTree = "<group>"; };
+		AC918D702A92620F00789F60 /* PaymentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardView.swift; sourceTree = "<group>"; };
+		AC918D732A92629200789F60 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		AC918D752A92636200789F60 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 			children = (
 				AC918D4F2A92517200789F60 /* AirplaneBookingApp.swift */,
 				AC918D5E2A92560400789F60 /* Extension */,
+				AC918D722A92628900789F60 /* Model */,
 				AC918D692A92598700789F60 /* Components */,
 				AC918D5D2A9255FD00789F60 /* Modules */,
 				AC918D5F2A92561800789F60 /* Assets.xcassets */,
@@ -116,10 +123,36 @@
 		AC918D692A92598700789F60 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				AC918D6E2A9261F900789F60 /* HeaderView */,
+				AC918D6F2A92620000789F60 /* CardView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AC918D6E2A9261F900789F60 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
 				AC918D6A2A92599200789F60 /* FlightHeaderView.swift */,
 				AC918D6C2A925CD000789F60 /* FlightDetailsView.swift */,
 			);
-			path = Components;
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		AC918D6F2A92620000789F60 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				AC918D702A92620F00789F60 /* PaymentCardView.swift */,
+				AC918D752A92636200789F60 /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		AC918D722A92628900789F60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC918D732A92629200789F60 /* Card.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +226,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC918D522A92517200789F60 /* MainView.swift in Sources */,
+				AC918D742A92629200789F60 /* Card.swift in Sources */,
 				AC918D6B2A92599200789F60 /* FlightHeaderView.swift in Sources */,
 				AC918D502A92517200789F60 /* AirplaneBookingApp.swift in Sources */,
+				AC918D762A92636200789F60 /* CardView.swift in Sources */,
+				AC918D712A92620F00789F60 /* PaymentCardView.swift in Sources */,
 				AC918D622A92562900789F60 /* Color + EXT.swift in Sources */,
 				AC918D682A92593A00789F60 /* HomeView.swift in Sources */,
 				AC918D642A92572F00789F60 /* Image + EXT.swift in Sources */,

@@ -32,23 +32,15 @@ struct FlightHeaderView: View {
     var body: some View {
         
         VStack {
-            Image.logo
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: size.width * 0.4)
-                .frame(maxWidth: .infinity, alignment: .leading)
             
-            HStack {
-                FlightDetailsView(alignment: .leading, place: "Los Angeles", code: "LAS", timing: "23 Nov, 03:30")
-                
-                flightDetailsTimeHours()
-                
-                FlightDetailsView(alignment: .trailing, place: "New York", code: "NYC", timing: "23 Nov, 07:15")
-                
-            }
+            logoView
+            
+            flightDetailsView
+            
+            airplaneImageView
         }
         .padding(15)
-        .padding(.top, safeArea.top)
+        .padding([.top, .horizontal], safeArea.top)
         .background(
             Rectangle()
                 .fill(linearGradients)
@@ -56,7 +48,29 @@ struct FlightHeaderView: View {
     }
 }
 
+// MARK: - SETUP VIEW
+
 extension FlightHeaderView {
+    
+    private var logoView: some View {
+        Image.logo
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: size.width * 0.4)
+            .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    private var flightDetailsView: some View {
+        HStack {
+            FlightDetailsView(alignment: .leading, place: "Los Angeles", code: "LAS", timing: "23 Nov, 03:30")
+            
+            flightDetailsTimeHours()
+            
+            FlightDetailsView(alignment: .trailing, place: "New York", code: "NYC", timing: "23 Nov, 07:15")
+            
+        }
+        .padding(.top, 20)
+    }
     
     private func flightDetailsTimeHours() -> some View {
         VStack(spacing: 8) {
@@ -71,6 +85,14 @@ extension FlightHeaderView {
         .foregroundColor(.white)
         .frame(maxWidth: .infinity)
         
+    }
+    
+    private var airplaneImageView: some View {
+        Image.airplane
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(height: 160)
+            .padding(.bottom, -20)
     }
 }
 

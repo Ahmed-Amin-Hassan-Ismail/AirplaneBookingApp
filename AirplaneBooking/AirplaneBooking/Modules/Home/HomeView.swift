@@ -34,6 +34,42 @@ struct HomeView: View {
             PaymentCardView()
                 .zIndex(0)
             
+            addPurchasseButton()
+        }
+    }
+}
+
+// MARK: - SETUP VIEW
+
+extension HomeView {
+    
+    private func addPurchasseButton() -> some View {
+        
+        Rectangle()
+            .fill(
+                LinearGradient(colors: [
+                    .white.opacity(0.3),
+                    .white.opacity(0.7),
+                    
+                ], startPoint: .top, endPoint: .bottom)
+            )
+            .overlay(setupButtonView(), alignment: .bottom)
+    }
+    
+    private func setupButtonView() -> some View {
+        
+        Button {
+            
+        } label: {
+            
+            Text("Confirm $1,536.00")
+                .font(.callout)
+                .fontWeight(.semibold)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.topBlue.gradient)
+                .clipShape(Capsule())
+                .padding(.bottom, 20)
         }
     }
 }

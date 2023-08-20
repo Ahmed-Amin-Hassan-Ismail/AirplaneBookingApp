@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		AC918D502A92517200789F60 /* AirplaneBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D4F2A92517200789F60 /* AirplaneBookingApp.swift */; };
-		AC918D522A92517200789F60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D512A92517200789F60 /* ContentView.swift */; };
-		AC918D542A92517300789F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC918D532A92517300789F60 /* Assets.xcassets */; };
+		AC918D522A92517200789F60 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D512A92517200789F60 /* MainView.swift */; };
 		AC918D572A92517300789F60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC918D562A92517300789F60 /* Preview Assets.xcassets */; };
+		AC918D602A92561800789F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC918D5F2A92561800789F60 /* Assets.xcassets */; };
+		AC918D622A92562900789F60 /* Color + EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D612A92562900789F60 /* Color + EXT.swift */; };
+		AC918D642A92572F00789F60 /* Image + EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D632A92572F00789F60 /* Image + EXT.swift */; };
+		AC918D682A92593A00789F60 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D672A92593A00789F60 /* HomeView.swift */; };
+		AC918D6B2A92599200789F60 /* FlightHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D6A2A92599200789F60 /* FlightHeaderView.swift */; };
+		AC918D6D2A925CD000789F60 /* FlightDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D6C2A925CD000789F60 /* FlightDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC918D4C2A92517200789F60 /* AirplaneBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirplaneBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC918D4F2A92517200789F60 /* AirplaneBookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplaneBookingApp.swift; sourceTree = "<group>"; };
-		AC918D512A92517200789F60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		AC918D532A92517300789F60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC918D512A92517200789F60 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AC918D562A92517300789F60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC918D5F2A92561800789F60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC918D612A92562900789F60 /* Color + EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + EXT.swift"; sourceTree = "<group>"; };
+		AC918D632A92572F00789F60 /* Image + EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image + EXT.swift"; sourceTree = "<group>"; };
+		AC918D672A92593A00789F60 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AC918D6A2A92599200789F60 /* FlightHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightHeaderView.swift; sourceTree = "<group>"; };
+		AC918D6C2A925CD000789F60 /* FlightDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				AC918D4F2A92517200789F60 /* AirplaneBookingApp.swift */,
-				AC918D512A92517200789F60 /* ContentView.swift */,
-				AC918D532A92517300789F60 /* Assets.xcassets */,
+				AC918D5E2A92560400789F60 /* Extension */,
+				AC918D692A92598700789F60 /* Components */,
+				AC918D5D2A9255FD00789F60 /* Modules */,
+				AC918D5F2A92561800789F60 /* Assets.xcassets */,
 				AC918D552A92517300789F60 /* Preview Content */,
 			);
 			path = AirplaneBooking;
@@ -65,6 +77,49 @@
 				AC918D562A92517300789F60 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC918D5D2A9255FD00789F60 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AC918D662A9258B700789F60 /* Home */,
+				AC918D652A9258AB00789F60 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AC918D5E2A92560400789F60 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AC918D612A92562900789F60 /* Color + EXT.swift */,
+				AC918D632A92572F00789F60 /* Image + EXT.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AC918D652A9258AB00789F60 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AC918D512A92517200789F60 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AC918D662A9258B700789F60 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AC918D672A92593A00789F60 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AC918D692A92598700789F60 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AC918D6A2A92599200789F60 /* FlightHeaderView.swift */,
+				AC918D6C2A925CD000789F60 /* FlightDetailsView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +180,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC918D602A92561800789F60 /* Assets.xcassets in Resources */,
 				AC918D572A92517300789F60 /* Preview Assets.xcassets in Resources */,
-				AC918D542A92517300789F60 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC918D522A92517200789F60 /* ContentView.swift in Sources */,
+				AC918D522A92517200789F60 /* MainView.swift in Sources */,
+				AC918D6B2A92599200789F60 /* FlightHeaderView.swift in Sources */,
 				AC918D502A92517200789F60 /* AirplaneBookingApp.swift in Sources */,
+				AC918D622A92562900789F60 /* Color + EXT.swift in Sources */,
+				AC918D682A92593A00789F60 /* HomeView.swift in Sources */,
+				AC918D642A92572F00789F60 /* Image + EXT.swift in Sources */,
+				AC918D6D2A925CD000789F60 /* FlightDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +334,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,7 +363,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -27,7 +27,7 @@ struct FlightHeaderView: View {
         self.safeArea = safeArea
     }
     
-    
+    // MARK: - BODY
     
     var body: some View {
         
@@ -37,6 +37,15 @@ struct FlightHeaderView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: size.width * 0.4)
                 .frame(maxWidth: .infinity, alignment: .leading)
+            
+            HStack {
+                FlightDetailsView(alignment: .leading, place: "Los Angeles", code: "LAS", timing: "23 Nov, 03:30")
+                
+                flightDetailsTimeHours()
+                
+                FlightDetailsView(alignment: .trailing, place: "New York", code: "NYC", timing: "23 Nov, 07:15")
+                
+            }
         }
         .padding(15)
         .padding(.top, safeArea.top)
@@ -44,7 +53,23 @@ struct FlightHeaderView: View {
             Rectangle()
                 .fill(linearGradients)
         )
-        
+    }
+}
+
+extension FlightHeaderView {
+    
+    private func flightDetailsTimeHours() -> some View {
+        VStack(spacing: 8) {
+            
+            Image.rightArrow
+                .font(.title2)
+            
+            Text("5h 15m")
+        }
+        .font(.body)
+        .fontWeight(.semibold)
+        .foregroundColor(.white)
+        .frame(maxWidth: .infinity)
         
     }
 }

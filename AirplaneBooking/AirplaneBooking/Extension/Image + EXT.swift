@@ -29,6 +29,11 @@ extension Image {
     
     static let users = Users()
     
+    
+    /* System Name */
+    
+    static let rightArrow = Image(systemName: "chevron.right")
+    
 }
 
 

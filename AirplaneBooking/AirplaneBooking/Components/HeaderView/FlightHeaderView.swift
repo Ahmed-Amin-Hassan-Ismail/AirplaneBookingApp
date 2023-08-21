@@ -91,6 +91,7 @@ extension FlightHeaderView {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(height: 160)
+            .padding(.horizontal, 30)
             .padding(.bottom, -20)
     }
     

@@ -53,6 +53,7 @@ extension HomeView {
                     
                 ], startPoint: .top, endPoint: .bottom)
             )
+            .padding(.top, 50)
             .overlay(setupButtonView(), alignment: .bottom)
     }
     

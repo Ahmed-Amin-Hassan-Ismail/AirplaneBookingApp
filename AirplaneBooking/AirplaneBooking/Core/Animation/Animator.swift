@@ -16,6 +16,7 @@ class Animator: ObservableObject {
     @Published var startAnimation: Bool = false
     @Published var planePosition: CGRect = .zero
     
+    // MARK: - METHODS
     
     func buyATicker() {
         

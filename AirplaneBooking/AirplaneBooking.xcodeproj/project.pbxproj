@@ -27,6 +27,9 @@
 		ACE9A9E72A93A59300FDA257 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9A9E62A93A59300FDA257 /* ContactView.swift */; };
 		ACE9A9E92A93A5BF00FDA257 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9A9E82A93A5BF00FDA257 /* User.swift */; };
 		ACE9A9EB2A93A76B00FDA257 /* HomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9A9EA2A93A76B00FDA257 /* HomeButtonView.swift */; };
+		ACE9A9EE2A93CBF500FDA257 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9A9ED2A93CBF500FDA257 /* Animator.swift */; };
+		ACE9A9F02A93D60200FDA257 /* RectKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9A9EF2A93D60200FDA257 /* RectKey.swift */; };
+		ACE9A9F32A93DAC600FDA257 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9A9F22A93DAC600FDA257 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		ACE9A9E62A93A59300FDA257 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		ACE9A9E82A93A5BF00FDA257 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ACE9A9EA2A93A76B00FDA257 /* HomeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonView.swift; sourceTree = "<group>"; };
+		ACE9A9ED2A93CBF500FDA257 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		ACE9A9EF2A93D60200FDA257 /* RectKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectKey.swift; sourceTree = "<group>"; };
+		ACE9A9F22A93DAC600FDA257 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 			children = (
 				AC918D4F2A92517200789F60 /* AirplaneBookingApp.swift */,
 				AC918D5E2A92560400789F60 /* Extension */,
+				ACE9A9F42A93DBBC00FDA257 /* Core */,
 				AC918D722A92628900789F60 /* Model */,
 				AC918D692A92598700789F60 /* Components */,
 				AC918D5D2A9255FD00789F60 /* Modules */,
@@ -143,7 +150,7 @@
 				AC918D6E2A9261F900789F60 /* HeaderView */,
 				AC918D6F2A92620000789F60 /* CardView */,
 				AC918D7A2A9276FE00789F60 /* DetailHeaderView */,
-				ACE9A9DF2A939B2C00FDA257 /* ContactView */,
+				ACE9A9DF2A939B2C00FDA257 /* ContactInformationView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -192,7 +199,7 @@
 			path = DetailHeaderView;
 			sourceTree = "<group>";
 		};
-		ACE9A9DF2A939B2C00FDA257 /* ContactView */ = {
+		ACE9A9DF2A939B2C00FDA257 /* ContactInformationView */ = {
 			isa = PBXGroup;
 			children = (
 				ACE9A9E02A939B3D00FDA257 /* ContactInformationView.swift */,
@@ -200,7 +207,41 @@
 				ACE9A9E62A93A59300FDA257 /* ContactView.swift */,
 				ACE9A9EA2A93A76B00FDA257 /* HomeButtonView.swift */,
 			);
-			path = ContactView;
+			path = ContactInformationView;
+			sourceTree = "<group>";
+		};
+		ACE9A9EC2A93CBE300FDA257 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				ACE9A9ED2A93CBF500FDA257 /* Animator.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		ACE9A9F42A93DBBC00FDA257 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ACE9A9F52A93DBC400FDA257 /* Constant */,
+				ACE9A9F72A93DBE400FDA257 /* PreferenceKey */,
+				ACE9A9EC2A93CBE300FDA257 /* Animation */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ACE9A9F52A93DBC400FDA257 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				ACE9A9F22A93DAC600FDA257 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		ACE9A9F72A93DBE400FDA257 /* PreferenceKey */ = {
+			isa = PBXGroup;
+			children = (
+				ACE9A9EF2A93D60200FDA257 /* RectKey.swift */,
+			);
+			path = PreferenceKey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +317,8 @@
 				AC918D522A92517200789F60 /* MainView.swift in Sources */,
 				AC918D742A92629200789F60 /* Card.swift in Sources */,
 				AC918D6B2A92599200789F60 /* FlightHeaderView.swift in Sources */,
+				ACE9A9F02A93D60200FDA257 /* RectKey.swift in Sources */,
+				ACE9A9EE2A93CBF500FDA257 /* Animator.swift in Sources */,
 				ACE9A9E72A93A59300FDA257 /* ContactView.swift in Sources */,
 				ACE9A9E52A939EBB00FDA257 /* Information.swift in Sources */,
 				AC918D502A92517200789F60 /* AirplaneBookingApp.swift in Sources */,
@@ -285,6 +328,7 @@
 				AC918D792A92753800789F60 /* DetailView.swift in Sources */,
 				ACE9A9E32A939EA700FDA257 /* InformationView.swift in Sources */,
 				AC918D712A92620F00789F60 /* PaymentCardView.swift in Sources */,
+				ACE9A9F32A93DAC600FDA257 /* Constant.swift in Sources */,
 				AC918D622A92562900789F60 /* Color + EXT.swift in Sources */,
 				ACE9A9EB2A93A76B00FDA257 /* HomeButtonView.swift in Sources */,
 				AC918D7C2A92771200789F60 /* DetailHeaderView.swift in Sources */,

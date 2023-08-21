@@ -35,7 +35,7 @@ struct PaymentCardView: View {
                 .offset(y: offsetY)
                 .offset(y: currentIndex * -200.0)
             }
-            .coordinateSpace(name: "SCROLL")
+            .coordinateSpace(name: Constant.coordinateScrollSpace)
         }
         .background(Color.white.ignoresSafeArea())
         .contentShape(Rectangle())

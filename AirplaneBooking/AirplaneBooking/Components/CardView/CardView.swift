@@ -26,7 +26,7 @@ struct CardView: View {
         
         GeometryReader { geometryProxy in
             let size = geometryProxy.size
-            let minY = geometryProxy.frame(in: .named("SCROLL")).minY
+            let minY = geometryProxy.frame(in: .named(Constant.coordinateScrollSpace)).minY
             let progress = minY / size.height
             let constrainedProgress = progress > 1 ? 1 : progress < 0 ? 0 : progress
             

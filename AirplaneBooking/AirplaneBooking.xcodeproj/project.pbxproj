@@ -20,6 +20,13 @@
 		AC918D742A92629200789F60 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D732A92629200789F60 /* Card.swift */; };
 		AC918D762A92636200789F60 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D752A92636200789F60 /* CardView.swift */; };
 		AC918D792A92753800789F60 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D782A92753800789F60 /* DetailView.swift */; };
+		AC918D7C2A92771200789F60 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC918D7B2A92771200789F60 /* DetailHeaderView.swift */; };
+		ACE9A9E12A939B3D00FDA257 /* ContactInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9A9E02A939B3D00FDA257 /* ContactInformationView.swift */; };
+		ACE9A9E32A939EA700FDA257 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9A9E22A939EA700FDA257 /* InformationView.swift */; };
+		ACE9A9E52A939EBB00FDA257 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9A9E42A939EBB00FDA257 /* Information.swift */; };
+		ACE9A9E72A93A59300FDA257 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9A9E62A93A59300FDA257 /* ContactView.swift */; };
+		ACE9A9E92A93A5BF00FDA257 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9A9E82A93A5BF00FDA257 /* User.swift */; };
+		ACE9A9EB2A93A76B00FDA257 /* HomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9A9EA2A93A76B00FDA257 /* HomeButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,13 @@
 		AC918D732A92629200789F60 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		AC918D752A92636200789F60 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AC918D782A92753800789F60 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		AC918D7B2A92771200789F60 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
+		ACE9A9E02A939B3D00FDA257 /* ContactInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInformationView.swift; sourceTree = "<group>"; };
+		ACE9A9E22A939EA700FDA257 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		ACE9A9E42A939EBB00FDA257 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		ACE9A9E62A93A59300FDA257 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		ACE9A9E82A93A5BF00FDA257 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ACE9A9EA2A93A76B00FDA257 /* HomeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +142,8 @@
 			children = (
 				AC918D6E2A9261F900789F60 /* HeaderView */,
 				AC918D6F2A92620000789F60 /* CardView */,
+				AC918D7A2A9276FE00789F60 /* DetailHeaderView */,
+				ACE9A9DF2A939B2C00FDA257 /* ContactView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -154,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				AC918D732A92629200789F60 /* Card.swift */,
+				ACE9A9E82A93A5BF00FDA257 /* User.swift */,
+				ACE9A9E42A939EBB00FDA257 /* Information.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +182,25 @@
 				AC918D782A92753800789F60 /* DetailView.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		AC918D7A2A9276FE00789F60 /* DetailHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				AC918D7B2A92771200789F60 /* DetailHeaderView.swift */,
+			);
+			path = DetailHeaderView;
+			sourceTree = "<group>";
+		};
+		ACE9A9DF2A939B2C00FDA257 /* ContactView */ = {
+			isa = PBXGroup;
+			children = (
+				ACE9A9E02A939B3D00FDA257 /* ContactInformationView.swift */,
+				ACE9A9E22A939EA700FDA257 /* InformationView.swift */,
+				ACE9A9E62A93A59300FDA257 /* ContactView.swift */,
+				ACE9A9EA2A93A76B00FDA257 /* HomeButtonView.swift */,
+			);
+			path = ContactView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,11 +276,18 @@
 				AC918D522A92517200789F60 /* MainView.swift in Sources */,
 				AC918D742A92629200789F60 /* Card.swift in Sources */,
 				AC918D6B2A92599200789F60 /* FlightHeaderView.swift in Sources */,
+				ACE9A9E72A93A59300FDA257 /* ContactView.swift in Sources */,
+				ACE9A9E52A939EBB00FDA257 /* Information.swift in Sources */,
 				AC918D502A92517200789F60 /* AirplaneBookingApp.swift in Sources */,
+				ACE9A9E12A939B3D00FDA257 /* ContactInformationView.swift in Sources */,
+				ACE9A9E92A93A5BF00FDA257 /* User.swift in Sources */,
 				AC918D762A92636200789F60 /* CardView.swift in Sources */,
 				AC918D792A92753800789F60 /* DetailView.swift in Sources */,
+				ACE9A9E32A939EA700FDA257 /* InformationView.swift in Sources */,
 				AC918D712A92620F00789F60 /* PaymentCardView.swift in Sources */,
 				AC918D622A92562900789F60 /* Color + EXT.swift in Sources */,
+				ACE9A9EB2A93A76B00FDA257 /* HomeButtonView.swift in Sources */,
+				AC918D7C2A92771200789F60 /* DetailHeaderView.swift in Sources */,
 				AC918D682A92593A00789F60 /* HomeView.swift in Sources */,
 				AC918D642A92572F00789F60 /* Image + EXT.swift in Sources */,
 				AC918D6D2A925CD000789F60 /* FlightDetailsView.swift in Sources */,

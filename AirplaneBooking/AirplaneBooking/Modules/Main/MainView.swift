@@ -17,8 +17,8 @@ struct MainView: View {
             
             let size = geometryProxy.size
             let safeArea = geometryProxy.safeAreaInsets
-            
-            HomeView(size: size, safeArea: safeArea)
+            // FIXME: - HomeView
+            DetailView(size: size, safeArea: safeArea)
                 .ignoresSafeArea(.container, edges: .vertical)
             
         }

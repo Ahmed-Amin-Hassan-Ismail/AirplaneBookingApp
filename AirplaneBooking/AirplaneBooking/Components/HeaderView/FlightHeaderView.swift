@@ -54,8 +54,8 @@ extension FlightHeaderView {
     private var logoView: some View {
         Image.logo
             .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: size.width * 0.4)
+            .aspectRatio(contentMode: .fill)
+            .frame(width: size.width * 0.4, height: size.height * 0.01)
             .frame(maxWidth: .infinity, alignment: .leading)
     }
     
@@ -93,6 +93,10 @@ extension FlightHeaderView {
             .frame(height: 160)
             .padding(.horizontal, 30)
             .padding(.bottom, -20)
+            .opacity(0)
+            .anchorPreference(key: RectKey.self, value: .bounds) { anchor in
+                return [Constant.planeBounds : anchor]
+            }
     }
     
     private var addPlusButton: some View {
